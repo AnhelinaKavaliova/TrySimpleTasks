@@ -1,6 +1,5 @@
 package Structures;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringArray {
@@ -17,7 +16,7 @@ public class StringArray {
             System.out.print("Enter " + k + " string: ");
             s[i] = scanner.nextLine();
         }
-        //Arrays.sort(s);
+
         for(int i = 0; i < stringNum; i++){
             for(int j = i+1; j < stringNum; j++){
                 if(s[i].length() >s [j].length()){
@@ -33,7 +32,5 @@ public class StringArray {
         for(String str : s){
             System.out.println(str);
         }
-
-
     }
 }
